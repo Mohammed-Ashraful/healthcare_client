@@ -6,7 +6,7 @@ import useAuth from '../../../Hooks/useAuth';
 const Header = () => {
   const { logOut ,user} = useAuth();
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='sticky-top'>
       <Container>
         <Navbar.Brand className='fw-2'> HEALTH CARE </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

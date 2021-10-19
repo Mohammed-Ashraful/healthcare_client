@@ -3,15 +3,16 @@ import { Col, Form, Row, Button } from 'react-bootstrap';
 import useAuth from '../../Hooks/useAuth';
 import { useHistory,useLocation } from "react-router-dom";
 const Login = () => {
-  const { signInWithGoogle, signInWithEmail, user } = useAuth();
+  const { signInWithGoogle, signInWithEmail, user,setLoading } = useAuth();
   const history = useHistory();
   const location = useLocation();
   const redirect_uri = location?.state?.from || "/"
   const handleGoogleSignIn = () => {
+    setLoading(true)
     signInWithGoogle()
       .then(result => {
         history.push(redirect_uri)
-      })
+      }).finally(() => setLoading(false))
   }
   return (
     <div>

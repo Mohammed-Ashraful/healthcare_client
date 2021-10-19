@@ -11,12 +11,14 @@ const Register = () => {
     handleName,
     user,
     signInWithEmail,
-    signInWithGoogle } = useAuth();
+    signInWithGoogle,
+  setLoading} = useAuth();
   const handleGoogleSignIn = () => {
+    setLoading(true)
     signInWithGoogle()
       .then(result => {
         history.push('./')
-      })
+      }).finally(() => setLoading(false))
   }
   return (
     <>
