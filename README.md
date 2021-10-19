@@ -1,14 +1,11 @@
 # HEALTH CARE Pvt.ltd
-# click here [Live site Link](https://ouracademy.netlify.app) 
+# click here [Live site Link](https://health-care-d8b2b.web.app/) 
 
 ## Details of Health Care
 
 > Health Care is the one of the best hospital in bangladesh <br/>
 > Our Doctors are so good and they are toper in Medical college <br/>
 > Our all test are also good <br/>
-> In Web development course we have 100000 student <br/>
-> We also Build a awesome platform for digital marketer <br/>
-
 
 ## Details of Health care website
 
@@ -16,6 +13,9 @@
 - show a banner
 - Sticky nav bar 
 - Information to Contact us
+- appoinment From to Take servixe 
+- Login in form and some protected route
+- Emergency section
 
 ## Features
 
@@ -25,6 +25,8 @@
 - To create this project i had take some help form some frameWork
 - To how all card and menu i use React-Bootstrap 
 - To Route this i had use React-router
+- Firebase Authentication
+
 
 
 I think in this site had no bug ..In case had some issues i will try to solve As soon as
@@ -43,3 +45,5 @@ Which languge and framWork I use in this projects
 - Javascript
 - React
 - React Bootstrap
+- Firebase
+

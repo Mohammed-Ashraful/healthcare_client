@@ -13,7 +13,7 @@ const Banner = () => {
           />
           <Carousel.Caption>
             <h1>HEALTH CARE </h1>
-            <p> </p>
+            <p className='text-warning'>The Hospital has a total of 99 beds – 89 In-Patient beds and 10 Day Care beds. The In-Patient specialties are General Medicine, General Surgery and Gynaecology. We also have an Urgent Care Centre incorporating a Local Injuries Unit and Medical Assessment Unit.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -24,7 +24,7 @@ const Banner = () => {
           /> 
           <Carousel.Caption>
             <h1 className="text-dark">Our Emargencey Unit </h1>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab necessitatibus esse eum molestias reiciendis asperiores, hic corporis voluptatibus similique harum ea odit praesentium in animi! Delectus cumque enim amet non.</p>
+            <p className='text-dark'> An emergency department (ED), also known as an accident & emergency department (A&E), emergency room (ER), emergency ward (EW) or casualty department, is a medical treatment facility specializing in emergency medicine, the acute care of patients who present without prior appointment either by their own means or by that of an ambulance. The emergency department is usually found in a hospital or other primary care center.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -36,7 +36,7 @@ const Banner = () => {
 
           <Carousel.Caption>
             <h1>Our all services are too good </h1>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>Our service is the best in Bangladesh . We want to Developer our health sector</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

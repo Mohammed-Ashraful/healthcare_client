@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form,Button, Col, Row } from 'react-bootstrap';
+import { Form, Button, Col, Row } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
 import './Register.css'
@@ -12,7 +12,7 @@ const Register = () => {
     user,
     signInWithEmail,
     signInWithGoogle,
-  setLoading} = useAuth();
+    setLoading } = useAuth();
   const handleGoogleSignIn = () => {
     setLoading(true)
     signInWithGoogle()
@@ -22,7 +22,7 @@ const Register = () => {
   }
   return (
     <>
-      <Form className='form-container' onSubmit={signInWithEmail}>
+      <Form className='form-container mt-5' onSubmit={signInWithEmail}>
         <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
           <Form.Label column sm={2}>
             Name
@@ -30,7 +30,7 @@ const Register = () => {
           <Col sm={10}>
             <Form.Control onBlur={handleName} type="text" placeholder="Name " required />
           </Col>
-      </Form.Group>
+        </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
           <Form.Label column sm={2}>
             Email
@@ -57,11 +57,9 @@ const Register = () => {
             <Button className='bg-success' type="submit">Register</Button>
           </Col>
         </Form.Group>
+        <Button type="submit" onClick={handleGoogleSignIn}> <i className="fab fa-google"></i> Sign in Google</Button>
       </Form>
-
-      <Button type="submit" onClick={handleGoogleSignIn}>Sign in Google</Button>
-      <h1>{user?.email}</h1>
-      </>
+    </>
   );
 };
 

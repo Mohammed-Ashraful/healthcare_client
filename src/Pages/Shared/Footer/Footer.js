@@ -1,9 +1,9 @@
 import React from 'react';
 import { FormControl, InputGroup, Button } from 'react-bootstrap';
-
+import './Footer.css'
 const Footer = () => {
   return (
-    <div className=' bg-dark'>
+    <div className='bg-dark footer'>
       <div className="row text-white m-0 mb-0">
         <div className="col-lg-3 col-md-3 col-12 p-2">
           <h2>Our Services</h2>
@@ -25,8 +25,11 @@ const Footer = () => {
               </Button>
             </InputGroup>
           </div>
-          <div className="">
-            fa
+          <div className="fs-1">
+            <i className="px-3 fab fa-facebook"></i>
+            <i className="px-3 fab fa-instagram"></i>
+            <i className="px-3 fab fa-github"></i>
+            <i className="px-3 fab fa-twitter"></i>
           </div>
         </div>
         <div className="col-lg-3 col-md-3 col-12 p-2">

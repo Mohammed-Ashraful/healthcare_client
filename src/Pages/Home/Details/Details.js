@@ -14,34 +14,12 @@ const Details = () => {
       .then((res) => res.json())
       .then((data) => {
         setDetails(data);
-        const p = details?.find((d) => d.id == id);
-        console.log('amr', data?.name);
-        // console.log('p',p);
       })
-  }, []);
-  // console.log('banano', id);
-  // console.log('details',details[0]);
+    }, []);
+    const service = details?.find((serviceId) => serviceId.id == id);
 
-console.log(details);
-console.log(details.id);
- 
-  
-  // function isOkey(ser) {
-  //   return ser.id === id;
-  // }
-
-  // console.log('single data',details?.find(isOkey));
-
-
-  // const a = () => {
-  //   const p = details?.find((d) => d.id == id);
-  //   setDetails(p);
-  //   console.log(p);
-  // }
-  // console.log(a());
   return (
     <div className="row p-0 m-0">
-      <h1>Hello </h1>
       <div className="col-lg-4 col-md-4 col-12 bg-success h-75 p-5 mt-5">
         <div className='bg-success text-white'>
           <h3> Emergency Case </h3>
@@ -51,10 +29,10 @@ console.log(details.id);
         </div>
       </div>
       <Card className="col-lg-8 col-md-4 col-12 p-5">
-      <Card.Img variant="top" className="img-fluid p-5" width="70%" src={details?.img} />
+      <Card.Img variant="top" className="img-fluid p-5" width="70%" src={service?.img} />
       <Card.Body className="text-dark">
-        <Card.Title>{details?.name}</Card.Title>
-        <Card.Text>{details?.description}</Card.Text>
+        <Card.Title>{service?.name}</Card.Title>
+        <Card.Text>{service?.description}</Card.Text>
         <Card.Text>
         </Card.Text>
       </Card.Body>

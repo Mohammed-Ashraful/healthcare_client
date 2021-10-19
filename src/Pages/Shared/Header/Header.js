@@ -8,19 +8,15 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='sticky-top'>
       <Container>
-        <Navbar.Brand className='fw-2'> HEALTH CARE </Navbar.Brand>
+        <Navbar.Brand className='fs-1'> HEALTH CARE PVT LTD.</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to='/home'>Home</Nav.Link>
-            <Nav.Link>About</Nav.Link>
-            <NavDropdown title="Services" id="collasible-nav-dropdown">
-              <NavDropdown.Item as={Link} to='/services'> Se </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/'>  </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/'>  </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to='/'>  </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link as={Link} to='/about'>About</Nav.Link>
+            <Nav.Link as={Link} to='/services'>Services</Nav.Link>
+            <Nav.Link as={Link} to='/appoinment'>Appoinment </Nav.Link>
+            
           </Nav>
           <Nav>
             {!user?.email ?
@@ -33,6 +29,7 @@ const Header = () => {
                 signOut
               </Nav.Link>
             }
+            <b className="text-white pt-2 px-5"> {user?.displayName}</b>
           </Nav>
         </Navbar.Collapse>
       </Container>

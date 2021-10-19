@@ -9,11 +9,14 @@ const Services = () => {
       .then(data => setServices(data))
   },[])
   return (
-    <div className='service-container mx-5 p-5'>
+    <>
+      <h1 className='py-3 text-warning'>Our services Category</h1>
+    <div className='service-container' id="services">
       {
-        services?.map(service=><Service service={service}></Service>)
+        services?.map(service=><Service key={service?.id} service={service}></Service>)
       }
-    </div>
+      </div>
+      </>
   );
 };
 

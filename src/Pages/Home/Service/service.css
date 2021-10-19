@@ -1,13 +1,42 @@
-.service-container{
+.service-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
-.service-img{
-  width: 400px;
+.service-img {
+  width: 360px;
   height: 200px;
   object-fit: cover;
+  margin-left: 60px;
 }
-.service{
+.service {
   border: none;
   box-shadow: 5px 5px 10px rgb(168, 161, 161);
+}
+
+@media only screen and (max-width: 1200px) {
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:10 10px;
+  }
+ 
+}
+
+@media only screen and (max-width: 600px) {
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 0px;
+  } .service{
+    margin-right: 100px;
+
+  }
 }
