@@ -36,19 +36,16 @@ const Appoinment = () => {
           </InputGroup>
         </Form.Group>
       </Row>
-      {/* city */}
       <Row className="mb-3">
         <Form.Group
           as={Col}
           md="6"
           className="position-relative"
         >
-          <Form.Label>City</Form.Label>
+          <Form.Label>Address</Form.Label>
           <Form.Control
             type="text"
-            placeholder="City"
-
-            // value={values.city}
+            placeholder="Enter your address"
           />
         </Form.Group>
         <Form.Group
@@ -56,10 +53,10 @@ const Appoinment = () => {
           md="3"
           className="position-relative"
         >
-          <Form.Label>State</Form.Label>
+          <Form.Label>your problem</Form.Label>
           <Form.Control
           type="text"
-          placeholder="State"
+          placeholder="Problem"
           />
           <Form.Control.Feedback type="invalid" tooltip>
           </Form.Control.Feedback>
@@ -67,13 +64,12 @@ const Appoinment = () => {
         <Form.Group
           as={Col}
           md="3"
-          controlId="validationFormik105"
           className="position-relative"
         >
-          <Form.Label>Zip</Form.Label>
+          <Form.Label>Department</Form.Label>
           <Form.Control
           type="text"
-          placeholder="Zip"
+            placeholder="Department"
           name="zip"
           />
         </Form.Group>

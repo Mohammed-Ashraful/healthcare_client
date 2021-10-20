@@ -1,11 +1,9 @@
 import React from 'react';
-import { Form, Button, Col, Row } from 'react-bootstrap';
-import { useHistory } from 'react-router';
-import { Link } from 'react-router-dom';
+import { Form, Col, Row } from 'react-bootstrap';
+import { useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Register.css'
 const Register = () => {
-  const history = useHistory();
   const {
     handleEmail,
     handlePassword,
@@ -17,11 +15,14 @@ const Register = () => {
     isLogIn,
     error } = useAuth();
 
+  const history = useHistory();
+  const location = useLocation();
+  const redirect_uri = location?.state?.from || "/"
   const handleGoogleSignIn = () => {
-    setLoading(true)
+      setLoading(true)
     signInWithGoogle()
       .then(result => {
-        history.push('./')
+        history.push(redirect_uri)
       }).finally(() => setLoading(false))
   }
   return (

@@ -47,27 +47,23 @@ const useFirebase = () => {
     e.preventDefault()
 
     isLogIn ? logInUser(email, password) : newUser(email, password);
-    
   }
 
   const newUser = (email, password) => {
-    console.log(email,password);
     setLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then(result => {
         setUser(result.user);
-        // verify();
+        verify();
         setError('')
         setUserName()
       }).catch(error => {
         setError(error.message)
-        console.log(error);
       })
       .finally(() => setLoading(false))
   }
 
   const logInUser = (email,password) => {
-    console.log(password,email);
     setLoading(true)
     signInWithEmailAndPassword(auth, email, password)
       .then(result => {
@@ -76,7 +72,6 @@ const useFirebase = () => {
         history.push('/home')
       }).catch(error => {
         setError(error.message)
-        console.log(error);
       })
       .finally(() => setLoading(false))
   }

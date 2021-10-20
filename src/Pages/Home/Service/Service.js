@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Card, Col, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './service.css'
 const Service = (props) => {
@@ -12,10 +12,10 @@ const Service = (props) => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description.slice(0, 200)}</Card.Text>
-          <Link
-            className='bg-primary text-white px-5 py-2'
+          <Nav.Link as={Link}
+            className='btn btn-primary text-white py-2 mx-5'
             to={`/service/${id}`}
-          > Details </Link>
+          > Details </Nav.Link>
         </Card.Body>
       </Card>
     </Col>

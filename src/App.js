@@ -12,6 +12,7 @@ import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/NotFound/NotFound';
 import About from './Pages/Home/About/About';
 import Appoinment from './Pages/Home/Appoinment/Appoinment';
+import Contact from './Pages/Home/Contact/Contact';
 function App() {
   return (
       <AuthProvider>
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route path='/about'>
               <About></About>
+            </Route>
+            <Route path='/contact'>
+              <Contact></Contact>
             </Route>
             <PrivateRoute path="/appoinment">
             <Appoinment> </Appoinment>
