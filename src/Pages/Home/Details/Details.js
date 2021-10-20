@@ -21,6 +21,7 @@ const Details = () => {
 
   return (
     <div className="row p-0 m-0">
+      {/* Emergency section  */}
       <div className="col-lg-4 col-md-4 col-12 bg-success h-75 p-5 mt-5">
         <div className='bg-success text-white'>
           <h3> Emergency Case </h3>

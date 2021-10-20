@@ -4,7 +4,7 @@ import './Emergency.css'
 const Emergency = () => {
   return (
     <div className="emergencys">
-      <div className='emergency row m-0 px-5' id="appoinment ">
+      <div className='emergency row m-0 px-5'>
         <div className="col-lg-4 col-md-4 col-12 bg-success h-75 p-5 mt-5">
           <div className='bg-success text-white'>
             <h3>Emergency Case </h3>

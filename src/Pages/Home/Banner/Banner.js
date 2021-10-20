@@ -5,6 +5,7 @@ const Banner = () => {
   return (
     <div>
       <Carousel>
+        {/* This is carousel first item  */}
         <Carousel.Item>
           <img
             className="d-block carousel-img"
@@ -16,6 +17,8 @@ const Banner = () => {
             <p className='text-warning'>The Hospital has a total of 99 beds – 89 In-Patient beds and 10 Day Care beds. The In-Patient specialties are General Medicine, General Surgery and Gynaecology. We also have an Urgent Care Centre incorporating a Local Injuries Unit and Medical Assessment Unit.</p>
           </Carousel.Caption>
         </Carousel.Item>
+
+        {/* This is carousel second item  */}
         <Carousel.Item>
           <img
             className="d-block carousel-img"
@@ -27,6 +30,8 @@ const Banner = () => {
             <p className='text-dark'> An emergency department (ED), also known as an accident & emergency department (A&E), emergency room (ER), emergency ward (EW) or casualty department, is a medical treatment facility specializing in emergency medicine, the acute care of patients who present without prior appointment either by their own means or by that of an ambulance. The emergency department is usually found in a hospital or other primary care center.</p>
           </Carousel.Caption>
         </Carousel.Item>
+        {/* This is carousel third item  */}
+
         <Carousel.Item>
           <img
             className="d-block carousel-img"

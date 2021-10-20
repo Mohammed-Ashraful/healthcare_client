@@ -7,7 +7,7 @@ const Appoinment = () => {
   return (
     <Form className='p-5 '>
       <Row className="mb-3">
-        {/* Name  */}
+        {/*Enter your Name  */}
         <Form.Group
           as={Col}
           md="4"
@@ -22,7 +22,7 @@ const Appoinment = () => {
 
           <Form.Control.Feedback tooltip>Looks good!</Form.Control.Feedback>
         </Form.Group>
-        {/* Email */}
+        {/*Enter your Email */}
         <Form.Group as={Col} md="4" controlId="validationFormikUsername2">
           <Form.Label>Email</Form.Label>
           <InputGroup hasValidation>
@@ -37,6 +37,7 @@ const Appoinment = () => {
         </Form.Group>
       </Row>
       <Row className="mb-3">
+ {/* Enter your address */}
         <Form.Group
           as={Col}
           md="6"
@@ -48,6 +49,7 @@ const Appoinment = () => {
             placeholder="Enter your address"
           />
         </Form.Group>
+{/* Enter your problem */}
         <Form.Group
           as={Col}
           md="3"
@@ -61,6 +63,7 @@ const Appoinment = () => {
           <Form.Control.Feedback type="invalid" tooltip>
           </Form.Control.Feedback>
         </Form.Group>
+        {/* Enter your Department */}
         <Form.Group
           as={Col}
           md="3"
