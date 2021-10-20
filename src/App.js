@@ -5,17 +5,15 @@ import AuthProvider from './Contexts/AuthProvider';
 import Details from './Pages/Home/Details/Details';
 import Home from './Pages/Home/Home/Home';
 import Services from './Pages/Home/Services/Services';
-import Login from './Pages/Login/Login';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Register from './Pages/Register/Register';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/NotFound/NotFound';
 import About from './Pages/Home/About/About';
-import Emergency from './Pages/Home/Emergency/Emergency';
+import Appoinment from './Pages/Home/Appoinment/Appoinment';
 function App() {
   return (
-    <div className="App">
       <AuthProvider>
         <Router>
           <Header></Header>
@@ -29,15 +27,12 @@ function App() {
             <Route path='/register'>
               <Register> </Register>
             </Route>
-            <Route path='/login'>
-              <Login></Login>
-            </Route>
             <Route path='/about'>
               <About></About>
             </Route>
-            <Route path="/appoinment">
-              <Emergency></Emergency>
-            </Route>
+            <PrivateRoute path="/appoinment">
+            <Appoinment> </Appoinment>
+            </PrivateRoute>
             <PrivateRoute path='/service/:id'>
               <Details></Details>
             </PrivateRoute>
@@ -51,7 +46,6 @@ function App() {
           <Footer></Footer>
         </Router>
       </AuthProvider>
-    </div>
   );
 }
 

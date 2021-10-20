@@ -7,16 +7,16 @@ const Services = () => {
     fetch('/data.json')
       .then(res => res.json())
       .then(data => setServices(data))
-  },[])
+  }, [])
   return (
     <>
-      <h1 className='py-3 text-warning'>Our services Category</h1>
-    <div className='service-container' id="services">
-      {
-        services?.map(service=><Service key={service?.id} service={service}></Service>)
-      }
+      <h1 className='py-3 text-warning text-center'>Our services Category</h1>
+      <div className='service-container px-4 m-0' id="services">
+        {
+          services?.map(service => <Service key={service?.id} service={service}></Service>)
+        }
       </div>
-      </>
+    </>
   );
 };
 

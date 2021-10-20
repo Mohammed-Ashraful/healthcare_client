@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 
 const Header = () => {
-  const { logOut ,user} = useAuth();
+  const { logOut, user } = useAuth();
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='sticky-top'>
       <Container>
-        <Navbar.Brand className='fs-1'> HEALTH CARE PVT LTD.</Navbar.Brand>
+        <Navbar.Brand className='fs-1'> KS Hospital PVT LTD.</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -16,15 +16,11 @@ const Header = () => {
             <Nav.Link as={Link} to='/about'>About</Nav.Link>
             <Nav.Link as={Link} to='/services'>Services</Nav.Link>
             <Nav.Link as={Link} to='/appoinment'>Appoinment </Nav.Link>
-            
+
           </Nav>
           <Nav>
             {!user?.email ?
-              <Nav><Nav.Link as={Link} to='/Register' >Register</Nav.Link>
-                <Nav.Link as={Link} to='/login' >
-                  Login
-                </Nav.Link></Nav>
-              :
+              <Nav.Link as={Link} to='/Register' >Register</Nav.Link> :
               <Nav.Link onClick={logOut} >
                 signOut
               </Nav.Link>
@@ -33,7 +29,7 @@ const Header = () => {
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>  
+    </Navbar>
   );
 };
 

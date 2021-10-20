@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Button, Col, Row } from 'react-bootstrap';
 import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Register.css'
 const Register = () => {
@@ -9,10 +10,13 @@ const Register = () => {
     handleEmail,
     handlePassword,
     handleName,
-    user,
     signInWithEmail,
     signInWithGoogle,
-    setLoading } = useAuth();
+    setLoading,
+    toggleLogin,
+    isLogIn,
+    error } = useAuth();
+
   const handleGoogleSignIn = () => {
     setLoading(true)
     signInWithGoogle()
@@ -22,15 +26,19 @@ const Register = () => {
   }
   return (
     <>
-      <Form className='form-container mt-5' onSubmit={signInWithEmail}>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-          <Form.Label column sm={2}>
-            Name
-          </Form.Label>
-          <Col sm={10}>
-            <Form.Control onBlur={handleName} type="text" placeholder="Name " required />
-          </Col>
-        </Form.Group>
+      <Form className='form-container px-5 mt-5'
+        onSubmit={signInWithEmail}>
+          <h2>Please {isLogIn?"Login":'Register'} </h2>
+        {!isLogIn &&
+          <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+            <Form.Label column sm={2}>
+              Name
+            </Form.Label>
+            <Col sm={10}>
+              <Form.Control onBlur={handleName} type="text" placeholder="Name " required />
+            </Col>
+          </Form.Group>
+        }
         <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
           <Form.Label column sm={2}>
             Email
@@ -48,16 +56,18 @@ const Register = () => {
           </Col>
         </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
-          <Col sm={{ span: 2, offset: 2 }}>
-            <Form.Check label="Remember me" />
-          </Col>
+          <div class="form-check">
+            <input onChange={toggleLogin} class="form-check-input" type="checkbox"/>
+            <label class="form-check-label" for="invalidCheck">
+              Already Registered ??
+            </label>
+          </div>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3">
-          <Col sm={{ span: 10, offset: 2 }}>
-            <Button className='bg-success' type="submit">Register</Button>
-          </Col>
-        </Form.Group>
-        <Button type="submit" onClick={handleGoogleSignIn}> <i className="fab fa-google"></i> Sign in Google</Button>
+        <div>{error}</div>
+        <Col className='ps-5' sm={{ span: 10, offset: 2 }}>
+          <button className='btn btn-success btn-lg px-5 py-2 mb-4 mx-5' type="submit"> {isLogIn ? "Login" : 'Register'} </button>
+          <button type="submit" className='btn btn-warning py-2 mx-5' onClick={handleGoogleSignIn}> <i className="fab fa-google"></i> Sign in Google</button>
+        </Col>
       </Form>
     </>
   );

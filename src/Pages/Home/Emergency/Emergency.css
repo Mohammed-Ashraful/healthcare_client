@@ -1,3 +1,20 @@
 .emergency{
   height:450px;
 }
+@media only screen and (max-width: 1200px) {
+.emergencys{
+  margin-bottom: 50px;
+}
+}
+@media only screen and (max-width: 992px) {
+.emergencys{
+  margin-bottom: 50px;
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+.emergencys{
+  margin-bottom: 500px;
+}
+}

@@ -1,6 +1,6 @@
 .form-container{
   width: 95%;
-  height:350px;
+  height:370px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -19,5 +19,7 @@
 .form-container{
   width: 95%;
   padding: 10px 20px;
+  margin-bottom: 120px;
 }
+
 }

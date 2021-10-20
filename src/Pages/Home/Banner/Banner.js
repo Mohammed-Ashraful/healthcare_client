@@ -12,7 +12,7 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h1>HEALTH CARE </h1>
+            <h1>KS Hospital </h1>
             <p className='text-warning'>The Hospital has a total of 99 beds – 89 In-Patient beds and 10 Day Care beds. The In-Patient specialties are General Medicine, General Surgery and Gynaecology. We also have an Urgent Care Centre incorporating a Local Injuries Unit and Medical Assessment Unit.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -21,7 +21,7 @@ const Banner = () => {
             className="d-block carousel-img"
             src="https://i.ibb.co/bJ7vkHm/2.png"
             alt="Second slide"
-          /> 
+          />
           <Carousel.Caption>
             <h1 className="text-dark">Our Emargencey Unit </h1>
             <p className='text-dark'> An emergency department (ED), also known as an accident & emergency department (A&E), emergency room (ER), emergency ward (EW) or casualty department, is a medical treatment facility specializing in emergency medicine, the acute care of patients who present without prior appointment either by their own means or by that of an ambulance. The emergency department is usually found in a hospital or other primary care center.</p>

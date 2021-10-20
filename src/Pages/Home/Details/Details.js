@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,13 +10,14 @@ const Details = () => {
   const phone = <FontAwesomeIcon icon={faPhone} />
 
   useEffect(() => {
-    fetch("/data.JSON")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {
-        setDetails(data);
+        const service = data?.find((serviceId) => serviceId.id == id);
+        setDetails(service);
       })
     }, []);
-    const service = details?.find((serviceId) => serviceId.id == id);
+   
 
   return (
     <div className="row p-0 m-0">
@@ -28,15 +29,15 @@ const Details = () => {
           <button className="btn btn-primary px-5">Contact</button>
         </div>
       </div>
-      <Card className="col-lg-8 col-md-4 col-12 p-5">
-      <Card.Img variant="top" className="img-fluid p-5" width="70%" src={service?.img} />
-      <Card.Body className="text-dark">
-        <Card.Title>{service?.name}</Card.Title>
-        <Card.Text>{service?.description}</Card.Text>
-        <Card.Text>
-        </Card.Text>
-      </Card.Body>
-    </Card>
+        <Card className="col-lg-8 col-md-4 col-12 p-5">
+          <Card.Img variant="top" className="img-fluid p-5" width="70%" src={details?.img} />
+          <Card.Body className="text-dark">
+            <Card.Title className='fs-1 py-3'>{details?.name}</Card.Title>
+            <Card.Text>{details?.description}</Card.Text>
+            <Card.Text>
+            </Card.Text>
+          </Card.Body>
+        </Card>
     </div>
   );
 };

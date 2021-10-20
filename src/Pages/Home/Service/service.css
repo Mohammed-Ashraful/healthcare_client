@@ -1,13 +1,13 @@
 .service-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 18px;
 }
 .service-img {
-  width: 360px;
-  height: 200px;
+  width: 280px;
+  height: 180px;
   object-fit: cover;
-  margin-left: 60px;
+  padding-left: 10px;
 }
 .service {
   border: none;
@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 100px;
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -27,6 +28,12 @@
     grid-template-columns: 1fr 1fr;
     margin:10 10px;
   }
+  .service-img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  padding-left: 10px;
+}
  
 }
 
@@ -36,7 +43,7 @@
     grid-template-columns: 1fr;
     margin-left: 0px;
   } .service{
-    margin-right: 100px;
+    margin-right: 0px;
 
   }
 }
