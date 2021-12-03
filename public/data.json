@@ -3,31 +3,36 @@
     "id": 1,
     "name": "Plastic surgery",
     "img": "https://i.ibb.co/9qLm7Pp/plastic.jpg",
-    "description": "Plastic surgery is a surgical specialty involving the restoration, reconstruction, or alteration of the human body. It can be divided into two main categories: reconstructive surgery and cosmetic surgery. Reconstructive surgery includes craniofacial surgery, hand surgery, microsurgery, and the treatment of burns. While reconstructive surgery aims to reconstruct a part of the body or improve its functioning, cosmetic (or aesthetic) surgery aims at improving the appearance of iThe word plastic in plastic surgery means 'reshaping' and comes from the Greek of malleable flesh.[3] This meaning in English is seen as early as 1598. The surgical definition of sense by 70 years"
+    "description": "Plastic surgery is a surgical specialty involving the restoration, reconstruction, or alteration of the human body. It can be divided into two main categories: reconstructive surgery and cosmetic surgery. Reconstructive surgery includes craniofacial surgery, hand surgery, microsurgery, and the treatment of burns. While reconstructive surgery aims to reconstruct a part of the body or improve its functioning, cosmetic (or aesthetic) surgery aims at improving the appearance of iThe word plastic in plastic surgery means 'reshaping' and comes from the Greek of malleable flesh.[3] This meaning in English is seen as early as 1598. The surgical definition of sense by 70 years",
+    "icon":"<i class='fab fa-500px'></i>"
   },
   {
     "id": 2,
     "name": "Haematology",
     "img": "https://i.ibb.co/K2ty0Xf/haematology.jpg",
-    "description": "Haematology involves the diagnosis and treatment of patients who have disorders of the blood and bone marrow. Whilst a major part of a haematologist’s time is spent in providing direct clinical care to patients, diagnostic work in the laboratory is also a significant part of their work.Haematology is the specialty responsible for the diagnosis and management of a wide range of benign and malignant disorders of the red and white blood cells, platelets and the coagulation system in adults and children.Haematologists care directly for patients on hospital wards and out patient clinics.Their patients may have a serious life- threatening illness such as leukaemia,"
+    "description": "Haematology involves the diagnosis and treatment of patients who have disorders of the blood and bone marrow. Whilst a major part of a haematologist’s time is spent in providing direct clinical care to patients, diagnostic work in the laboratory is also a significant part of their work.Haematology is the specialty responsible for the diagnosis and management of a wide range of benign and malignant disorders of the red and white blood cells, platelets and the coagulation system in adults and children.Haematologists care directly for patients on hospital wards and out patient clinics.Their patients may have a serious life- threatening illness such as leukaemia,",
+    "icon": "<i class='fab fa-500px'></i>"
   },
   {
     "id": 3,
     "name": "Neurology",
     "img": "https://i.ibb.co/gyVQ0Sb/neurology.jpg",
-    "description": "Neurology is the branch of medicine that deals with disorders of the nervous system, which include the brain, blood vessels, muscles and nerves. The main areas of neurology are: the autonomic, central and peripheral nervous systems. A physician who works in the field of neurology is called a neurologist; a neurosurgeon treats neurological disorders via surgery.After 8 years of medical school, neurologists must complete postgraduate residency for 3 to 4 years.After completion of residency, some neurologists may continue on with fellowships in other areas of neurology.These may include behavioral neurology, clinical neurophysiology, epilepsy, interventional neurology or pain management."
+    "description": "Neurology is the branch of medicine that deals with disorders of the nervous system, which include the brain, blood vessels, muscles and nerves. The main areas of neurology are: the autonomic, central and peripheral nervous systems. A physician who works in the field of neurology is called a neurologist; a neurosurgeon treats neurological disorders via surgery.After 8 years of medical school, neurologists must complete postgraduate residency for 3 to 4 years.After completion of residency, some neurologists may continue on with fellowships in other areas of neurology.These may include behavioral neurology, clinical neurophysiology, epilepsy, interventional neurology or pain management.",
+    "icon": "<i class='fab fa-500px'></i>"
   },
   {
     "id": 4,
     "name": "Gastrology",
     "img": "https://i.ibb.co/nBZSYLD/Gastrology.jpg",
-    "description": "Gastroenterology is the branch of medicine focused on the digestive system and its disorders.Diseases affecting the gastrointestinal tract, which include the organs from mouth into anus, along the alimentary canal, are the focus of this speciality.Physicians practicing in this field are called gastroenterologists.They have usually completed about eight years of pre- medical and medical education, a year - long internship(if this is not a part of the residency), three years of an internal medicine residency, and three years in the gastroenterology fellowship.Gastroenterologists perform a number of diagnostic and therapeutic procedures including colonoscopy, esophagogastroduodenoscopy(EGD) . "
+    "description": "Gastroenterology is the branch of medicine focused on the digestive system and its disorders.Diseases affecting the gastrointestinal tract, which include the organs from mouth into anus, along the alimentary canal, are the focus of this speciality.Physicians practicing in this field are called gastroenterologists.They have usually completed about eight years of pre- medical and medical education, a year - long internship(if this is not a part of the residency), three years of an internal medicine residency, and three years in the gastroenterology fellowship.Gastroenterologists perform a number of diagnostic and therapeutic procedures including colonoscopy, esophagogastroduodenoscopy(EGD) . ",
+    "icon": "<i class='fab fa-500px'></i>"
   },
   {
     "id": 5,
     "name": "Cardiology",
     "img": "https://i.ibb.co/GnxdyzQ/Cardiology.jpg",
-    "description": "Cardiology is a medical specialty and a branch of internal medicine concerned with disorders of the heart. It deals with the diagnosis and treatment of such conditions as congenital heart defects, coronary artery disease, electrophysiology, heart failure and valvular heart disease. Subspecialties of the cardiology field include cardiac electrophysiology, echocardiography, interventional cardiology and nuclear cardiology.Cardiovascular systemThe basic functioning of the cardiovascular system includes the way the heart processes oxygen and nutrients in the blood, which is called coronary circulation.The circulation system consists of coronary arteries and coronary veins."
+    "description": "Cardiology is a medical specialty and a branch of internal medicine concerned with disorders of the heart. It deals with the diagnosis and treatment of such conditions as congenital heart defects, coronary artery disease, electrophysiology, heart failure and valvular heart disease. Subspecialties of the cardiology field include cardiac electrophysiology, echocardiography, interventional cardiology and nuclear cardiology.Cardiovascular systemThe basic functioning of the cardiovascular system includes the way the heart processes oxygen and nutrients in the blood, which is called coronary circulation.The circulation system consists of coronary arteries and coronary veins.",
+    "icon": "<i class='fab fa-500px'></i>"
   },
   {
     "id": 6,

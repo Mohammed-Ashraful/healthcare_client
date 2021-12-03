@@ -8,11 +8,12 @@ import {
   signInWithEmailAndPassword,
   sendEmailVerification,
   updateProfile
-} from 'firebase/auth'
+} from 'firebase/auth';
 
 import { useEffect, useState } from 'react';
 import initializeAuthentication from '../Firebase/Firebase.init';
 initializeAuthentication();
+
 const useFirebase = () => {
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
@@ -23,7 +24,6 @@ const useFirebase = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [isLogIn, setIsLogIn] = useState(false)
-
 
   // sign in and register a user using google 
   const signInWithGoogle = () => {
@@ -105,7 +105,7 @@ const useFirebase = () => {
 
       })
   }
-  // Observe real time state change in Web page 
+  // Observe real time state change in Web page
 
   useEffect(() => {
     onAuthStateChanged(auth, user => {
